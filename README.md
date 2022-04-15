@@ -26,3 +26,5 @@ Model evaluation is implemented on test data. In this step, each patch of the fa
 ## Experiment
 For this study the [ACNE04](https://github.com/xpwu95/ldl) the open dataset was used. The [ACNE04](https://github.com/xpwu95/ldl) includes 1457 face images and expert annotations according to the Japanese rating scale. The dataset has the following acne severity annotations: level 0 – Mild, level 1 – Moderate, level 2 – Severe, level 3 – Very severe. All images were taken at an angle of approximately 70 degrees from the front of the patient and manually annotated by experts.
 A study by [Microsoft](https://github.com/microsoft/nestle-acne-assessment) was used as a benchmark for the experiment.
+
+##How to Cite
