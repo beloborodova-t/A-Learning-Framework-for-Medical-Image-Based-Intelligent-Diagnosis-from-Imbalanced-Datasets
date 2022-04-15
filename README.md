@@ -34,10 +34,4 @@ Data generated at the oversampling stage are used to train a CNN model.
 
 ### How to Cite
 If you find this work helpful, please cite it as
-
-@inProceedings{biloborodova2021ICITA,
- author = {Tetiana Biloborodova, Mark Koverha, Inna Skarga-Bandurova, Yelyzaveta Yevsieieva, Illia Skarha-Bandurov},
- title = {Deep Oversampling Technique for 4-level Acne Classification in Imbalanced Data},
- booktitle = {Proceedings of International Conference on Information Technology and Applications},
- year = {2021},
-}
+Biloborodova Т., Koverha M., Skarga-Bandurova I., Yevsieieva Ye., Skarha-Bandurov I. Deep Oversampling Technique for 4-level Acne Classification in Imbalanced Data. Proceedings of International Conference on Information Technology and Applications - ICITA 2021. Lecture Notes in Networks and Systems. P.
