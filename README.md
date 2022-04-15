@@ -10,9 +10,6 @@ Firstly, we extract patches from original images of human faces using one of the
 ![Proposed methodology](https://user-images.githubusercontent.com/53811556/163562251-623506a6-0099-413b-a76c-8f74de256a4a.png) 
 #### Proposed methodology pipeline
 
-## Data
-For this study the [ACNE04](https://github.com/xpwu95/ldl) the open dataset was used. The [ACNE04](https://github.com/xpwu95/ldl) includes 1457 face images and expert annotations according to the Japanese rating scale. The dataset has the following acne severity annotations: level 0 – Mild, level 1 – Moderate, level 2 – Severe, level 3 – Very severe. All images were taken at an angle of approximately 70 degrees from the front of the patient and manually annotated by experts.
-
 ## Step 1: Patches extraction 
 At the first stage, preliminary processing of images is carried out for capturing skin areas from the face image. The severity of acne does not depend on the location; it depends on the volume and severity of the lesion on the patient's face. From this prospective, the separate patches of the face image should give results that are more informative relatively to the entire face. The result of this step is a dataset S consisting of m patches extracted from facial images. Each patch inherits the image class label.
 ## Step 2: Data augmentation
@@ -26,4 +23,6 @@ The extracted and generated features are passed to train a CNN model to classify
 ## Step 6: Model evaluation
 Model evaluation is implemented on test data. In this step, each patch of the face image was evaluated, and the average rating for all patches of the same face was the predicted value of the image class. The test pipeline includes the extraction of facial image patches, feature extraction using the ResNet-152, patch classification using the trained CNN, obtaining the average predicted value of the acne severity class from the face image, and assessing the quality of recognition. 
 
+## Experiment
+For this study the [ACNE04](https://github.com/xpwu95/ldl) the open dataset was used. The [ACNE04](https://github.com/xpwu95/ldl) includes 1457 face images and expert annotations according to the Japanese rating scale. The dataset has the following acne severity annotations: level 0 – Mild, level 1 – Moderate, level 2 – Severe, level 3 – Very severe. All images were taken at an angle of approximately 70 degrees from the front of the patient and manually annotated by experts.
 A study by [Microsoft](https://github.com/microsoft/nestle-acne-assessment) was used as a benchmark for the experiment.
