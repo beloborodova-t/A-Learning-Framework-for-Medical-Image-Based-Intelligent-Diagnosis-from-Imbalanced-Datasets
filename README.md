@@ -8,7 +8,7 @@ The proposed methodology includes dealing with imbalanced images dataset at the 
 Firstly, we extract patches from original images of human faces using one of the two pre-trained models. Then data augmentation, feature extraction, and data oversampling are conducted. Finally, results obtained after oversampling are fed to CNN for model training and evaluation.
 
 ![Proposed methodology](https://user-images.githubusercontent.com/53811556/163562251-623506a6-0099-413b-a76c-8f74de256a4a.png) 
-#### Proposed methodology pipeline
+Proposed methodology pipeline
 
 ### Step 1: Patches extraction 
 At the first stage, preliminary processing of images is carried out for capturing skin areas from the face image. The severity of acne does not depend on the location; it depends on the volume and severity of the lesion on the patient's face. From this prospective, the separate patches of the face image should give results that are more informative relatively to the entire face. The result of this step is a dataset ***S*** consisting of m patches extracted from facial images. Each patch inherits the image class label. 
