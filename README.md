@@ -1,5 +1,5 @@
 # Deep-Oversampling-Technique-for-4-level-Acne-Classification-in-Imbalanced-Data
-This is a Python implementation of Deep Oversampling Technique for 4-level Acne Classification in Imbalanced Data paper.
+This is a Python implementation of Deep Oversampling Technique for Acne Images Classification in Imbalanced Data.
 ## Methodology
 We assume imbalanced dataset **_S_** with m objects |**_S_**| = **_m_**, as a pair **_S_** = {(**_x_**_i_, **_y_**_i_)}, **_i_** = **1**, ..., **_m_**, where **_x_**_i_ **ϵ _X_** denotes the instance in the **_n_**-dimensional feature space **_X_**={***f***1, ***f***2, ..., ***f***_n_}, and ***y***_i_  ϵ ***Y*** = {**1**, …, ***C***} denotes the class identifier label associated with ***x***_i_. in particular, when ***C*** = 2 we deal with binary classification task. In addition, we define subsets ***S***min ⊂ ***S*** and ***S***maj ⊂ ***S***, where ***S***min is the set of minority objects of classes in ***S***, and ***S***maj is the set of objects of prevailing classes in ***S***, so that ***S***min ∩ ***S***maj = {Φ} and ***S***min ᴜ ***S***maj = {***S***}. Based on these assumptions the problem of acne recognition can be formulated as a 4-type classification task. 
 Thereafter, the multiclass classification problem is transformed into a regression task. This transformation helps to reduce possible subjectivity in the assessment of the acne severity at the stage of data annotation. Since the acne levels class have a meaningful ordering, we assign the numeric values from **0** to ***C*** to each of the corresponding ***C*** classes labels. Formally, it presented as follow ***y***  ⊆ ***S*** = {**1**, …, ***C***}→transformation→***y*** ϵ **ℝ**_n_. The values of the class variable are transformed into numbers. A numeric target is corresponding to a level of acne severity.
@@ -33,3 +33,11 @@ Data oversampling has been conducted with Synthetic Minority Oversampling Techni
 Data generated at the oversampling stage are used to train a CNN model.
 
 ### How to Cite
+If you find this work helpful, please cite it as
+
+@inProceedings{biloborodova2021ICITA,
+ author = {Tetiana Biloborodova, Mark Koverha, Inna Skarga-Bandurova, Yelyzaveta Yevsieieva, Illia Skarha-Bandurov},
+ title = {Deep Oversampling Technique for 4-level Acne Classification in Imbalanced Data},
+ booktitle = {Proceedings of International Conference on Information Technology and Applications},
+ year = {2021},
+}
