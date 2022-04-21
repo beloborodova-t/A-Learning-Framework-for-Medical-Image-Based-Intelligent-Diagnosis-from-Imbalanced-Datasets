@@ -7,18 +7,19 @@ Thresholding is also used to transform back a regression prediction into a class
 The proposed methodology includes dealing with imbalanced images dataset at the data level and feature level. At the data level, the following methods have been used: patch extraction and data augmentation. At the feature level, an oversampling technique has been used to deal with imbalanced data.
 Firstly, we extract patches from original images of human faces using one of the two pre-trained models. Then data augmentation, feature extraction, and data oversampling are conducted. Finally, results obtained after oversampling are fed to CNN for model training and evaluation.
 
-![Proposed methodology](https://user-images.githubusercontent.com/53811556/163562251-623506a6-0099-413b-a76c-8f74de256a4a.png) 
+![Proposed methodology](https://user-images.githubusercontent.com/53811556/164542498-669b3421-6571-4ae2-871b-e8aa5017ff4a.png)
 Proposed methodology pipeline
 
-### Step 1: Patches extraction 
+### 1) Data Processing
+#### Patches extraction 
 At the first stage, preliminary processing of images is carried out to balance input data. The result of this step is a dataset ***S*** consisting of m patches extracted from facial images. Each patch inherits the image class label. 
-### Step 2: Data augmentation
+#### Data augmentation
 CNNs are spatially sensitive, which leads to insufficient recognition quality when using a limited number of images for network training. To overcome this issue, we use translation of an image section. The result of this step is a dataset ***S*** consisting of an increased number of patches. Each translated patch inherits the class label of the original patch that was used for augmentation.
-### Step 3: Feature extraction
+#### Feature extraction
 We utilised the transferring learning paradigm and a pretrained ResNet-152 to extract features from training set of images. The result of this step is a dataset ***S*** = {(***x***_i_, ***y***_i_)} consisting of the features extracted using the trained model, where ***x***_i_ is the vector of extracted features of the patch ***m***_i_, and ***y***_i_ is the class label which denotes the pathology severity associated with ***x***_i_.
-### Step 4: Oversampling
+### 2) Data sampling
 We use oversampling to balance the number of dataset objects for each class. Formally, oversampling can be represented as follows. Any objects generated from the dataset ***S*** are denoted as ***E***, with disjoint subsets of ***E***min and ***E***maj representing the minority and majority of the ***E*** objects, respectively, whenever they are applied. The random oversampling process is implemented by adding a set ***E*** selected from the minority class: for a set of randomly selected minority examples in ***S***min, increase the original set ***S*** by replicating the selected examples and adding them to ***S***. Thus, the number of typical examples in ***S***min increases by |***E***|, and the balance of the class distribution of ***S*** is adjusted accordingly. This provides a mechanism for changing the degree of balance in the distribution of classes to any desired level. The result of this step is a dataset ***S*** = {(***x***_i_, ***y***_i_) consisting of extracted and generated features, where ***x***_i_ is a vector of extracted and generated features of patches ***m***_i_, and ***y***_i_ is the class label associated with ***x***_i_.
-### Step 5: Model training 
+### Classification 
 The extracted and generated features are passed to train a CNN model to classify pathology severity. Model evaluation is implemented on validation data.  
 
 ## Experiment
