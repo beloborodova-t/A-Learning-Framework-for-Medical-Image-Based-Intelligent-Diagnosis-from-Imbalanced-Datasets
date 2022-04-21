@@ -30,4 +30,4 @@ Data oversampling has been conducted with Synthetic Minority Oversampling Techni
 
 ### How to Cite
 If you find this work helpful, please cite it as
-"Biloborodova, T., Skarga-Bandurova, I., Koverha, M., Skarha-Bandurov, I. and Yevsieieva, Y., 2021. A Learning Framework for Medical Image-Based Intelligent Diagnosis from Imbalanced Datasets. In Applying the FAIR Principles to Accelerate Health Research in Europe in the Post COVID-19 Era (pp. 13-17). IOS Press."
+["Biloborodova, T., Skarga-Bandurova, I., Koverha, M., Skarha-Bandurov, I. and Yevsieieva, Y., 2021. A Learning Framework for Medical Image-Based Intelligent Diagnosis from Imbalanced Datasets. In Applying the FAIR Principles to Accelerate Health Research in Europe in the Post COVID-19 Era (pp. 13-17). IOS Press."](https://ebooks.iospress.nl/volumearticle/58245)
