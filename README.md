@@ -26,7 +26,7 @@ For this study the [ACNE04](https://github.com/xpwu95/ldl) the open dataset was 
 A study by [Microsoft](https://github.com/microsoft/nestle-acne-assessment) was used as a benchmark for the experiment. Steps 1, 2, 3 have been implemented using the [source code that has been developed for the collaborative project between Microsoft and Nestle Skin Health](https://github.com/microsoft/nestle-acne-assessment). Our modification of Steps 4, 5 is presented in [Steps4,5.ipynb]() code.
 Step 1 utilizes two pre-trained models: [shape_predictor_68_face_landmarks model](https://github.com/davisking/dlib-models) or the [One Eye model](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye.xml).
 Sliding translation as augmentation technique has been used at the Step 2.
-At the Step 3 the feature extraction from each patch is carried out using the [ResNet-152](https://www.cntk.ai/Models/Caffe_Converted/ResNet152_ImageNet_Caffe.model) model
+At the Step 3 the feature extraction from each patch is carried out using the [ResNet-152](https://www.cntk.ai/Models/Caffe_Converted/ResNet152_ImageNet_Caffe.model) model. 
 Data oversampling has been conducted with Synthetic Minority Oversampling Technique (SMOTE). 
 Data generated at the oversampling stage are used to train a CNN model.
 
